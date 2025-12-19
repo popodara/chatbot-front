@@ -1,0 +1,133 @@
+/* src/index.css  (or globals.css) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface-ground: #1e293b;   /* slate-800 */
+  --surface-card:   #1e293b;
+  --surface-border: #334155;   /* slate-700 */
+  --text-color:     #e2e8f0;   /* slate-200 */
+  --text-color-secondary: #94a3b8; /* slate-400 */
+}
+
+/* ---------- dialog ---------- */
+.p-dialog-mask {
+  background-color: rgba(0,0,0,.6) !important;
+}
+.p-dialog {
+  background-color: var(--surface-ground) !important;
+  border: 1px solid var(--surface-border) !important;
+  color: var(--text-color) !important;
+}
+.p-dialog-header,
+.p-dialog-content,
+.p-dialog-footer {
+  background: transparent !important;
+  color: var(--text-color) !important;
+  border: none !important;
+}
+
+/* ---------- inputs / textarea / calendar ---------- */
+.p-inputtext,
+.p-inputwrapper > .p-component,
+.p-calendar .p-inputtext,
+.p-dropdown-panel,
+.p-multiselect-panel,
+.p-datepicker {
+  background-color: var(--surface-ground) !important;
+  border-color: var(--surface-border) !important;
+  color: var(--text-color) !important;
+}
+.p-inputtext::placeholder {
+  color: var(--text-color-secondary) !important;
+}
+
+/* ---------- dropdown / multi-select items ---------- */
+.p-dropdown-item,
+.p-multiselect-item {
+  color: var(--text-color) !important;
+  padding: 2px !important;
+
+}
+.p-dropdown-item:hover,
+.p-multiselect-item:hover {
+  background-color: var(--surface-border) !important;
+}
+
+/* ---------- buttons inside dialog ---------- */
+.p-dialog .p-button {
+  color: #fff !important;
+}
+
+.p-datepicker .p-datepicker-header {
+  background: #1e293b !important; /* slate-800 */
+  border-color: #334155 !important; /* slate-700 */
+  color: #e2e8f0 !important; /* slate-200 */
+}
+
+.p-datepicker .p-datepicker-title,
+.p-datepicker .p-datepicker-prev,
+.p-datepicker .p-datepicker-next,
+.p-datepicker .p-datepicker-month,
+.p-datepicker .p-datepicker-year {
+  color: #e2e8f0 !important;
+}
+
+/* ==========  MULTI-SELECT PANEL HEADER  ========== */
+.p-multiselect-panel .p-multiselect-header {
+  background: #1e293b !important; /* slate-800 */
+  border-color: #334155 !important; /* slate-700 */
+  color: #e2e8f0 !important; /* slate-200 */
+}
+
+.p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-inputtext {
+  background: #1e293b !important;
+  border-color: #475569 !important;
+  color: #e2e8f0 !important;
+}
+
+.p-multiselect-panel .p-multiselect-header .p-multiselect-close,
+.p-multiselect-panel .p-multiselect-header .p-checkbox-box {
+  color: #e2e8f0 !important;
+}
+
+.p-multiselect-panel .p-multiselect-header .p-checkbox-box:hover {
+  background: #334155 !important; /* slate-700 */
+}
+
+/* ==========  SELECT & MULTI-SELECT ITEMS  ========== */
+.p-dropdown-item.p-highlight,
+.p-dropdown-item.p-focus,
+.p-multiselect-item.p-highlight,
+.p-multiselect-item.p-focus {
+  background: #334155 !important; /* slate-700 */
+  color: #e2e8f0 !important;      /* slate-200 */
+}
+
+.p-dropdown-item:hover,
+.p-multiselect-item:hover {
+  background: #475569 !important; /* slate-600 */
+  color: #e2e8f0 !important;
+}
+
+/* reset toast colours to PrimeReact defaults */
+/* .p-toast .p-toast-message.p-toast-success {
+  background: #c8e6c9 !important;
+  border: solid #4caf50 !important;
+  border-width: 0 0 0 6px !important;
+  color: #2e7d32 !important;
+}
+.p-toast .p-toast-message.p-toast-success .p-toast-icon {
+  color: #4caf50 !important;
+}
+
+.p-toast .p-toast-message.p-toast-error {
+  background: #ffcdd2 !important;
+  border: solid #f44336 !important;
+  border-width: 0 0 0 6px !important;
+  color: #c62828 !important;
+}
+.p-toast .p-toast-message.p-toast-error .p-toast-icon {
+  color: #f44336 !important;
+} */
